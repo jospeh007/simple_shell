@@ -128,9 +128,9 @@ void print_string(char *);
 int write_character(char);
 
 /* string3.c */
-char *str_cpy(char *, char *, int);
-char *str_cat(char *, char *, int);
-char *str_find_char(char *, char);
+char *str_cpy(char *destination, char *source, int n);
+char *str_cat(char *destination, char *source, int n);
+char *str_find_char(char *s, char c);
 
 /* string4.c */
 char **string_split(char *str, char *d);

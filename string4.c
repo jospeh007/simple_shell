@@ -6,7 +6,6 @@
  * @d: the delimeter string
  * Return: a pointer to an array of strings, or NULL on failure
  */
-
 char **string_split(char *str, char *d)
 {
 	int i, l, f, p, numwords = 0;
