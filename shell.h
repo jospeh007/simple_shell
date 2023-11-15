@@ -116,16 +116,16 @@ void find_cmd_command(info_t *);
 void fork_cmd_command(info_t *);
 
 /* string1.c */
-int str_len(char *);
-int str_compare(char *, char *);
-char *starts_with(const char *, const char *);
-char *str_cat(char *, char *);
+int str_len(char *string);
+int str_compare(char *string1, char *string2);
+char *starts_with(const char *haystack, const char *needle);
+char *str_cat(char *destination, char *source);
 
 /* string2.c */
-char *str_copy(char *, char *);
-char *str_duplicate(const char *);
-void print_string(char *);
-int write_character(char);
+char *str_copy(char *destination, char *source);
+char *str_duplicate(const char *str);
+void print_string(char *str);
+int writes_character(char c);
 
 /* string3.c */
 char *str_cpy(char *destination, char *source, int n);
@@ -138,8 +138,8 @@ char **string_split2(char *str, char d);
 
 /* memory_shell1.c */
 char *_my_memset(char *dest, char byte, unsigned int n);
-void my_free(char **pp);
-void *_my_realloc(void *, unsigned int, unsigned int);
+void my_free(char **str_array);
+void *_my_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 /* memory_shell2.c */
 int my_free_and_null(void **pointer);
