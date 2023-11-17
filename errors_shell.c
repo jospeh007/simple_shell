@@ -83,4 +83,3 @@ int custom_putsfile(char *str, int fd)
 	}
 	return (i);
 }
-
